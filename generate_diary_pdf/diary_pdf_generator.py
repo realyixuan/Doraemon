@@ -11,7 +11,7 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib.pagesizes import letter
 
-pdfmetrics.registerFont(TTFont('PingFang', './Pingfang.ttf'))
+pdfmetrics.registerFont(TTFont('PingFang', './PingFang Regular.ttf'))
 c = canvas.Canvas("out.pdf")
 
 def split_line_to_word(line):
@@ -105,5 +105,5 @@ def generate_pdf_by_dir(folder_path, year):
 
 
 if __name__ == '__main__':
-    generate_pdf_by_dir("./2024", 2024)
+    generate_pdf_by_dir("./2023", 2023)
 
